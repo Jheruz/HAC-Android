@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:background="#00ddff">
+
+        <TextView
+            android:text="Settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView8"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="120dp">
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_margin="5dp"
+                android:id="@+id/cancel"
+                android:layout_height="wrap_content"
+                app:bootstrapText="X"
+                app:bootstrapBrand="danger"
+                app:buttonMode="regular"
+                app:bootstrapSize="lg"
+                app:showOutline="true"
+                app:roundedCorners="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_light">
+
+                <TextView
+                    android:text="Username and Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userpassLabel"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    app:srcCompat="@android:drawable/ic_menu_edit"
+                    android:id="@+id/editAccount"
+                    android:layout_height="25dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="5dp"
+                    app:contentPadding="10dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="Username"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="sans-serif-condensed"
+                                android:id="@+id/usernameLabel"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:text="sample username"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="sans-serif-condensed"
+                                android:id="@+id/username"
+                                android:layout_weight="1"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="Password"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="sans-serif-condensed"
+                                android:id="@+id/passwordLabel"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:text="sample password"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="sans-serif-condensed"
+                                android:id="@+id/password"
+                                android:layout_weight="1"
+                                android:textSize="18sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_light">
+
+                <TextView
+                    android:text="Arduino Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView66"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    app:srcCompat="@android:drawable/ic_menu_edit"
+                    android:id="@+id/editNum"
+                    android:layout_height="25dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="5dp"
+                    app:contentPadding="10dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="GSM Number"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:id="@+id/gsmNumLabel"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:text="09090067944"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:id="@+id/gsmNum"
+                            android:layout_weight="1"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/inBluetooth">
+
+                <TextView
+                    android:text="Add User"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@android:color/holo_blue_light"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="5dp"
+                        app:contentPadding="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Mobile No."
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView14"
+                                    android:fontFamily="sans-serif-condensed" />
+
+                                <TextView
+                                    android:text="09"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/num"
+                                    android:layout_weight="1"
+                                    android:hint="Enter last 9 number"
+                                    android:maxLength="9"
+                                    android:paddingLeft="-0dp"
+                                    android:inputType="number" />
+
+                            </LinearLayout>
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/save"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:bootstrapText="Save"
+                                app:bootstrapBrand="success"
+                                app:buttonMode="regular"
+                                app:bootstrapSize="lg"
+                                app:showOutline="true"
+                                app:roundedCorners="true"
+                                android:layout_marginRight="5dp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Mobile Number List"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@android:color/holo_blue_light"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="5dp"
+                        app:contentPadding="10dp"
+                        android:layout_margin="5dp"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:text="Contact Number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:id="@+id/textView7"
+                                    android:layout_weight="1"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp" />
+
+                                <com.beardedhen.androidbootstrap.BootstrapButton
+                                    android:layout_gravity="center_vertical"
+                                    android:id="@+id/delete"
+                                    android:layout_height="wrap_content"
+                                    app:bootstrapText="Delete All"
+                                    app:bootstrapBrand="danger"
+                                    app:buttonMode="regular"
+                                    app:bootstrapSize="sm"
+                                    app:showOutline="true"
+                                    app:roundedCorners="true"
+                                    android:layout_width="wrap_content" />
+                            </LinearLayout>
+
+                            <ListView
+                                android:id="@+id/numList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

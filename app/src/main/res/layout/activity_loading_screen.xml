@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_loading_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loadingnew"
+    tools:context="com.laguna.university.homeappliancecontrol.LoadingScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/clickhere"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frame"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:text="Developed By"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:text="Hannasheen Rikka Soridor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView25"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView24"
+                android:textSize="16dp"
+                android:text="Jerome B Dela Cruz" />
+
+            <TextView
+                android:text="Jommel M Moredo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:textSize="16dp" />
+
+            <TextView
+                android:text="Dennis Quilao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/progressBar"
+            android:max="100"
+            android:progress="1"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:background="@android:color/black"
+            android:progressTint="@color/colorPrimary"
+            android:soundEffectsEnabled="true"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/percentage"
+            android:textColor="@android:color/background_light"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="10%" />
+
+    </FrameLayout>
+
+</RelativeLayout>

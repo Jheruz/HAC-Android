@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/closingbg"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    tools:context="com.laguna.university.homeappliancecontrol.Exit">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:text="Click Screen to Exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/done"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:text="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timer"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <TextView
+        android:padding="10dp"
+        android:text="Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:background="@android:color/holo_blue_bright" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:contentPadding="5dp"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView2"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/name"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:hint="Enter Name (Max 20 Character)"
+                        android:maxLength="20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:bootstrapText="Save"
+                        app:bootstrapBrand="success"
+                        app:buttonMode="regular"
+                        app:bootstrapSize="lg"
+                        app:showOutline="true"
+                        app:roundedCorners="true" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:bootstrapText="Cancel"
+                        app:bootstrapBrand="danger"
+                        app:buttonMode="regular"
+                        app:bootstrapSize="lg"
+                        app:showOutline="true"
+                        app:roundedCorners="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

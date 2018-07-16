@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleCard"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        app:contentPadding="5dp"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title">
+
+            <TextView
+                android:text="App and Developer Info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView8"
+                android:textSize="21sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textAlignment="viewStart" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="120dp">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_margin="5dp"
+                    android:id="@+id/cancel"
+                    android:layout_height="wrap_content"
+                    app:bootstrapText="X"
+                    app:bootstrapBrand="danger"
+                    app:buttonMode="regular"
+                    app:bootstrapSize="lg"
+                    app:showOutline="true"
+                    app:roundedCorners="true"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentPadding="5dp"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="5dp"
+                android:id="@+id/appInfoCard">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Application Information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView11"
+                        android:textSize="20sp"
+                        android:background="@android:color/holo_blue_light"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="sans-serif" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="5dp"
+                            app:contentPadding="10dp"
+                            android:layout_margin="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:text="Created Date"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView1"
+                                        android:fontFamily="sans-serif-condensed" />
+
+                                    <TextView
+                                        android:text="November 15, 2017"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView38"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="5dp"
+                            app:contentPadding="10dp"
+                            android:layout_margin="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:text="Version"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView40"
+                                        android:fontFamily="sans-serif-condensed" />
+
+                                    <TextView
+                                        android:text="1.0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView39"
+                                        android:layout_weight="1"
+                                        android:fontFamily="sans-serif-condensed" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentPadding="5dp"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="5dp"
+                android:id="@+id/devInfoCard">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Developer Information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView22"
+                        android:textSize="20sp"
+                        android:background="@android:color/holo_blue_light"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="sans-serif" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="5dp"
+                            app:contentPadding="10dp"
+                            android:layout_margin="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Dela Cruz, Jerome B."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView17"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:text="Contact #:"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView23"
+                                            android:fontFamily="sans-serif-condensed" />
+
+                                        <TextView
+                                            android:text="09090067944"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/jeromeNum"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-condensed" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:text="Email:"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView21"
+                                            android:fontFamily="sans-serif-condensed" />
+
+                                        <TextView
+                                            android:text="mrsuplado02@gmail.com"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/jeromeEmail"
+                                            android:layout_weight="1"
+                                            android:textColor="@android:color/holo_blue_light"
+                                            android:fontFamily="sans-serif-condensed" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="5dp"
+                            app:contentPadding="10dp"
+                            android:layout_margin="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Soridor, Hannasheen Rikka"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView18"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="20dp">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="Contact #:"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView28"
+                                            android:fontFamily="sans-serif-condensed" />
+
+                                        <TextView
+                                            android:text="09983218610"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView26"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-condensed" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="Email:"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView29"
+                                            android:fontFamily="sans-serif-condensed" />
+
+                                        <TextView
+                                            android:text="hanna981025@gmail.com"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/hannasheenEmail"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-condensed"
+                                            android:textColor="@android:color/holo_blue_light" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="5dp"
+                            app:contentPadding="10dp"
+                            android:layout_margin="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Moredo, Jommel M."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView19"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="Contact #:"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView32"
+                                            android:fontFamily="sans-serif-condensed" />
+
+                                        <TextView
+                                            android:text="09355907950"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView30"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-condensed" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="Email:"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView33"
+                                            android:fontFamily="sans-serif-condensed" />
+
+                                        <TextView
+                                            android:text="Moredojommel@gmail.com"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/jommelEmail"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-condensed"
+                                            android:textColor="@android:color/holo_blue_light" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="5dp"
+                            app:contentPadding="10dp"
+                            android:layout_margin="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="Quilao, Dennis"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView20"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="Contact #:"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView36"
+                                            android:fontFamily="sans-serif-condensed" />
+
+                                        <TextView
+                                            android:text="09064279708"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView34"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-condensed" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="Email:"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView37"
+                                            android:fontFamily="sans-serif-condensed" />
+
+                                        <TextView
+                                            android:text="dennis.quilao@yahoo.com"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/dennisEmail"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-condensed"
+                                            android:textColor="@android:color/holo_blue_light" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
